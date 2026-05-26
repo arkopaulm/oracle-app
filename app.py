@@ -45,7 +45,7 @@ else:
 
 st.sidebar.markdown("""
 ### How to use:
-1. Paste your client's raw HR requirement document or notes into the text area.
+1. Paste your HR requirement document or notes into the text area.
 2. Click **Generate Blueprint**.
 3. Review the structural configuration components and fully written Fast Formulas.
 4. Copy the code directly into your Oracle cloud environment.
