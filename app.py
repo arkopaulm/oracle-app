@@ -97,7 +97,8 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
           * Rule 5: Ensure the formal 'RETURN' statement maps perfectly to Oracle's engine specification for that Formula Type.
 
           ##4. GENERATE CONFIGURATION WORKBOOK
-          In the end also prepare a configuration workbook in excel with separate tabs for each of the component types of the configuration items
+          In the end also prepare a configuration workbook in excel with separate tabs for each of the component types of the configuration items.
+          Also provide the navigation path in Oracle Fusion HCM where the configuration needs to be made.
           
         """
         
