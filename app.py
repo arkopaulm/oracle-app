@@ -95,6 +95,10 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
           * Rule 3: Write out the exact logical conditions, loops, or date calculations cleanly.
           * Rule 4: DO NOT use placeholders like "/* Add logic here */". Write the code completely so it can compile.
           * Rule 5: Ensure the formal 'RETURN' statement maps perfectly to Oracle's engine specification for that Formula Type.
+
+          ##4. GENERATE CONFIGURATION WORKBOOK
+          In the end also prepare a configuration workbook in excel with separate tabs for each of the component types of the configuration items
+          
         """
         
         response = client.models.generate_content(
