@@ -5,7 +5,7 @@ from google.genai import types
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Oracle Absence AI Configurator",
+    page_title="Oracle HCM Absence AI Configurator",
     page_icon="🔮",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -45,7 +45,7 @@ else:
 
 st.sidebar.markdown("""
 ### How to use:
-1. Paste your HR requirement document or notes into the text area.
+1. Paste your Absence requirements document or notes into the text area.
 2. Click **Generate Blueprint**.
 3. Review the structural configuration components and fully written Fast Formulas.
 4. Copy the code directly into your Oracle cloud environment.
@@ -115,7 +115,7 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
         return f"An operational error occurred while connecting to the AI core: {str(e)}"
 
 # --- MAIN INTERFACE ---
-st.title("🔮 Oracle Absence Management AI Configurator")
+st.title("🔮 Oracle HCM Absence Management AI Configurator - An EDW product")
 st.caption("Convert complex business requirements directly into Oracle Setup Matrixes & Complete Fast Formulas.")
 
 # Default sample requirement to populate the box nicely
@@ -144,7 +144,7 @@ if generate_btn:
     if not user_requirements.strip():
         st.warning("Please provide business requirements first.")
     elif not api_key:
-        st.error("Please enter your Gemini API Key in the sidebar to run the application.")
+        st.error("Please enter your LLM API Key in the sidebar to run the application.")
     else:
         with st.spinner("Analyzing rules, generating components, and coding Fast Formulas..."):
             blueprint_output = generate_oracle_blueprint(user_requirements, api_key)
