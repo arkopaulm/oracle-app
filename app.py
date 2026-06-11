@@ -115,8 +115,9 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
         return f"An operational error occurred while connecting to the AI core: {str(e)}"
 
 # --- MAIN INTERFACE ---
-st.title("🔮 EDW Oracle HCM Absence Management AI Configurator ")
+st.title("🔮 Oracle HCM Absence Management AI Configurator ")
 st.caption("Convert complex business requirements directly into Oracle Setup Matrixes & Complete Fast Formulas.")
+st.caption("For any issues or questions reach out to EDW HR Team.")
 
 # Default sample requirement to populate the box nicely
 sample_text = (
