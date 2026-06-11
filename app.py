@@ -117,7 +117,7 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
 # --- MAIN INTERFACE ---
 st.title("🔮 Oracle HCM Absence Management AI Configurator ")
 st.caption("Convert complex business requirements directly into Oracle Setup Matrixes & Complete Fast Formulas.")
-st.caption("For any issues or questions reach out to EDW HR Team.")
+
 
 # Default sample requirement to populate the box nicely
 sample_text = (
@@ -137,6 +137,8 @@ user_requirements = st.text_area(
 col1, col2 = st.columns([1, 5])
 with col1:
     generate_btn = st.button("Generate Blueprint", use_container_width=True)
+
+st.caption("For any issues or questions reach out to EDW HR Team.")
 
 st.markdown("---")
 
