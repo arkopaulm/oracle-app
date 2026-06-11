@@ -122,11 +122,14 @@ st.caption("Convert complex business requirements directly into Oracle Setup Mat
 
 # Default sample requirement to populate the box nicely
 sample_text = (
-    "We need a 'US Sick Leave 2026' plan.\n"
-    "- Full-time employees accrue 1 hour of sick leave for every 30 hours worked, up to a maximum ceiling of 80 hours per year.\n"
-    "- Part-time employees get a flat allocation of 40 hours upfront on January 1st each year.\n"
-    "- Unused balance up to 24 hours can carry over to the next calendar year; anything above that is forfeited.\n"
-    "- Validation Rule: Employees cannot log more than 3 consecutive sick days without triggering a mandatory 'Medical Certification' requirement."
+    "We need a plan for UK Annual Leave starting in 2026.\n"
+    "- Full-time employees accrue 25 days upfront each year , rising by 1 for each year of service after completing 5 years upto a maximum of 28 . Create user defined table to have this mapping.\n"
+    "- Part-time employees get a prorated amount upfront depending on their FTE factor.\n"
+    "- New Hires also get a prorated amount upfront depending on their month of joining. If they are joining after 7th of the month , they will not be entitled for the amount that month.\n"
+    "- Leavers  get a prorated amount depending on their leave date. If they are leaving  after 24th of the month , they will not be entitled for the amount that month.\n"
+    "- Validation Rule: Employees cannot start their absence on a non-working day i.e public holidays & weekends.\n"
+    "- Unused balance up to 5 days can carry over to the next calendar year; anything above that is forfeited.\n"
+    "- Store Bank Holidays in UDT."
 )
 
 user_requirements = st.text_area(
