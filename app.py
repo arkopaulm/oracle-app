@@ -86,7 +86,7 @@ def generate_oracle_blueprint(requirements: str, api_key_to_use: str) -> str:
         
         ## 4. DETAILED FAST FORMULAS
         For EVERY single custom business logic point requested (Accruals, Vesting, Proration, Entry Validation, Carryover, Ceilings):
-        - ### [Formula Name] (e.g., XX_SICK_LEAVE_ACCRUAL_FF)
+        - ### [Formula Name] (e.g., EXPN_HCM_XX_SICK_LEAVE_ACCRUAL_FF) The naming convention should start with EXPN_HCM_XX where XX is the ISO country code for the country for which the fast formula is being defined
         - **Formula Type:** (e.g., Global Absence Accrual)
         - **Description:** Clear explanation of what inputs it reads and what variables it returns.
         - **Code Block:** Provide complete, syntactically bulletproof Oracle Fast Formula code inside a markdown code fence (```).
